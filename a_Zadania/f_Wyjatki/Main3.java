@@ -3,11 +3,21 @@ package a_Zadania.f_Wyjatki;
 public class Main3 {
 
     public static void main(String[] args) {
-        showLength(null);
+        showLength("null");
     }
 
     static void showLength(String s) {
-        System.out.println(s.length());
-    }
+        try {
+            if (s == null) {
+                System.out.println(s.length());
+                throw new IllegalArgumentException();
+            }
+        } catch (IllegalArgumentException e){
+            System.out.println("Nasz napis nie możę być nullem");
+        } catch (NullPointerException e) {
+            System.out.println("Kurcze nie ten wyjątek");
+        }
 
+
+    }
 }
