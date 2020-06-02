@@ -12,7 +12,6 @@ public class Main {
         Shape shape1 = new Shape(0, 0, "blue");
         Shape shape2 = new Shape(0, 5, "black");
 
-
         Circle circle1 = new Circle(0, 4, "yellow", 3);
         Circle circle2 = new Circle(0, 8, "purple", 3);
 
@@ -38,7 +37,5 @@ public class Main {
         hourlyEmployee.raiseWage(10);
         System.out.println(hourlyEmployee.calculatePayment(160));
         SalariedEmployee.workingHours = 160;
-
-
     }
 }
